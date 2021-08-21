@@ -22,7 +22,4 @@ async function logout(req, res){
   }
 }
 
-const logout = {
-  logout,
-};
 export default logout;
