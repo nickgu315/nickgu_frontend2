@@ -1,7 +1,7 @@
 import cookie from 'cookie'
 import { API_URL } from '@/config/index'
 
-logout async (req, res) => {
+async function logout(req, res) => {
   if (req.method === 'POST') {
     // Destroy cookie
     res.setHeader(
