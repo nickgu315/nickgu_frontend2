@@ -24,6 +24,7 @@ export default function ProjectPage({ evt }) {
           <div className={styles.image}>
             <Image
               src={evt.image.formats.medium.url}
+              alt={evt.image.formats.medium.url}
               width={960}
               height={600}
             />
