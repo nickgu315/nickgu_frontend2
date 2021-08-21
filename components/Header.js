@@ -12,8 +12,11 @@ export default function Header() {
     <header>
       <nav className={styles.header}>
           <div className={styles.topbarleftlogo}>
-            <a href="/"> <img src="/images/logo-512x512.png" alt="" />
-            </a>
+            <Link href='/'>
+              <a>
+              <img src="/images/logo-512x512.png" alt="" />
+              </a>
+            </Link>
           </div>
 
           <div className={styles.topbarleftsearch}>
