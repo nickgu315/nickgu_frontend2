@@ -1,0 +1,240 @@
+.header {
+  background: #fff;
+  color: #333;
+  height: 60px;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+  color: #333;
+  font-size: 13px;
+}
+
+.header a:hover {
+  color: #000;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  list-style: none;
+  white-space: nowrap;
+  padding:5px;
+}
+
+.header ul > li
+{
+  flex:1 1 auto;
+  text-align:center;
+  width: 180px;
+  margin:5px;  /* and that, will result in a 10px gap */
+}
+
+.topbarleftlogo {
+  position: absolute;
+  align-content: center;
+  top: 0px;
+  left: 10px;
+}
+.topbarleftlogo img {
+  width: 62px;
+  height: 62px;
+}
+
+.topbarleftsearch {
+  position: absolute;
+  top: 14px;
+  left: 80px;
+}
+
+.loginbtn {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  width: 140px;
+}
+
+.box2 {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align:center;
+  align-items: center;
+  align-content: center;
+  /*border:1px solid black;*/
+  right: 160px;
+  top:0px;
+  height: 60px;
+}
+
+.box2>* {
+  width: auto;
+  text-align:center;
+  align-items: center;
+  align-content: center;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* The dropdown container */
+.dropdown {
+  display: none;
+  width: auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  display: none;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  text-align:center;
+  align-items: center;
+  align-content: center;
+  color: black;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdowncontent {
+display: none;
+position: absolute;
+background-color: white;
+width: inherit;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+width: 200px;
+}
+
+.dropdowncontent a {
+float: none;
+color: black;
+padding: 10px 10px;
+text-decoration: none;
+display: block;
+text-align: right;
+width: inherit;
+font-size: 14px;
+}
+
+.dropdowncontent a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+  position: absolute;
+  top:50px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: 105px;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .topbarleftlogo {
+    position: absolute;
+    align-content: center;
+    top: -2px;
+    left: 10px;
+  }
+
+  .topbarleftlogo img {
+    width: 62px;
+    height: 62px;
+  }
+
+  .topbarleftsearch {
+    position: absolute;
+    top: 12px;
+    left: 80px;
+  }
+
+  .loginbtn {
+    position: absolute;
+    top: 12px;
+    right: 1px;
+  }
+
+  .box2 {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-flow: row;
+    text-align:center;
+    align-items: center;
+    align-content: center;
+    /*border:1px solid black;*/
+    top:45px;
+    height: 55px;
+    right: 19px;
+    width: 90%;
+    overflow-x: scroll;
+    overflow-y: inherit;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  .box2>* {
+    width: auto;
+    text-align:center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .dropdowncontent {
+  display: none;
+  position: relative;
+  background-color: white;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 5px;
+  border:1px solid black;
+  }
+  .dropdowncontent a {
+  float: none;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  width: inherit;
+  font-size: 13px;
+  }
+  .dropdown:hover .dropdowncontent {
+    display: block;
+    position: absolute;
+    top:40px;
+  }
+  .header a {
+    color: #333;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
