@@ -18,9 +18,7 @@ export default function ProjectItem({ evt }) {
       </div>
 
       <div className={styles.info}>
-        <span>
-          {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
-        </span>
+
         <h3>{evt.name}</h3>
       </div>
 

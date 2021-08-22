@@ -15,10 +15,34 @@ export default function ProjectPage({ evt }) {
   return (
     <Layout>
       <div className={styles.project}>
-        <span>
-          {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
-        </span>
+
         <h1>{evt.name}</h1>
+
+        <h3>Nature:</h3>
+        <p>{evt.nproject}</p>
+        <h3>Role:</h3>
+        <p>{evt.role}</p>
+
+        {evt.team && (
+          <div>
+            <h4>Team:</h4>
+            <p>{evt.team}</p>
+          </div>
+        )}
+
+        <h4>Location:</h4>
+        <p>{evt.location}</p>
+
+        {evt.time && (
+          <div>
+            <h4>Year:</h4>
+            <p>{evt.time}</p>
+          </div>
+        )}
+
+        <h4>Description:</h4>
+        <p>{evt.description}</p>
+
         <ToastContainer />
         {evt.image && (
           <div className={styles.image}>
@@ -29,13 +53,6 @@ export default function ProjectPage({ evt }) {
             />
           </div>
         )}
-
-        <h3>Performers:</h3>
-        <p>{evt.performers}</p>
-        <h3>Description:</h3>
-        <p>{evt.description}</p>
-        <h3>Venue: {evt.venue}</h3>
-        <p>{evt.address}</p>
 
         <ProjectMap evt={evt} />
 

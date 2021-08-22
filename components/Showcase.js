@@ -9,16 +9,16 @@ export default function Showcase() {
       </div>
 
       <div className={styles.showcase2}>
-        <h2 className={styles.showcase3}>Education: Harvard Graduate School of Design, Master in Architecture</h2>
-        <h4 className={styles.showcase3}>
+        <h3 className={styles.showcase3}>Education: Harvard Graduate School of Design, Master in Architecture (MArchI)</h3>
+        <h3 className={styles.showcase3}>
           I co-founded Eone Timepiece Inc. in 2012 when I was still in grad school and we exited in 2020. visit: www.eone-time.com
-        </h4>
+        </h3>
       </div>
       <div className={styles.showcase2}>
-        <h2 className={styles.showcase3}>My Experience</h2>
-        <h4 className={styles.showcase3}>
-          I am deeply passionate about building things and bring value to people. {}
-        </h4>
+        <h3 className={styles.showcase3}>My Experience</h3>
+        <h3 className={styles.showcase3}>
+          I am deeply passionate about building products through design and technology that bring values to people. {}
+        </h3>
       </div>
     </div>
   )

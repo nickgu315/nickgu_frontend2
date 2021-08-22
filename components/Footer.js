@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <p>Powered by &copy; NickGu 2021</p>
       <p>
-        <Link href='/about'>About Me</Link>
+        <Link href='/about'>About</Link>
       </p>
     </footer>
   )

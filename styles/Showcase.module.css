@@ -3,7 +3,7 @@
   width: 100%-10px;
   background: url('/images/nickgu_image.png') no-repeat;
   background-size: 300px;
-  background-position: center bottom;
+  background-position: 70% 100%;
   color: white;
   position: relative;
   display: flex;
@@ -78,7 +78,8 @@
 
 .showcasetext {
   position: relative;
-  top:120px;
+  top: 120px;
+  right: 350px;
   font-size: 25px;
   color: #0d47a1;
 }
@@ -87,10 +88,36 @@
   padding: 10px;
 }
 
+@media (max-width: 1400px) {
+  .showcasetext {
+    position: relative;
+    top: 120px;
+    right: 250px;
+    font-size: 15px;
+    color: #0d47a1;
+  }
+  }
+
+
 @media (max-width: 1000px) {
   .showcase {
+    height: 400px;
+    width: 100%-10px;
+    background: url('/images/nickgu_image.png') no-repeat;
+    background-size: 250px;
+    background-position: center bottom;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    margin: 20px;
     margin-bottom: 10px;
   }
+
   .showcase2 {
     height: 500px;
     width: 100%;
@@ -110,6 +137,7 @@
     padding-bottom: 0px;
     margin-top: 0px;
   }
+
   .showcase3 {
     height: 50%;
     width: 100%;
@@ -128,6 +156,14 @@
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     font-size: AuthContext;
     padding-top: 0px;
+  }
+
+  .showcasetext {
+    position: relative;
+    top: -145px;
+    right: 0px;
+    font-size: 15px;
+    color: #0d47a1;
   }
 
 }

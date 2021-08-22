@@ -6,7 +6,7 @@ import { API_URL } from '@/config/index'
 export default function HomePage({ projects }) {
   return (
     <Layout>
-      <h2>My Latest News</h2>
+      <h2>My Work</h2>
       {projects.length === 0 && <h3>Projects showcase coming soon!</h3>}
 
       {projects.map((evt) => (
@@ -15,7 +15,7 @@ export default function HomePage({ projects }) {
 
       {projects.length > 0 && (
         <Link href='/projects'>
-          <a className='btn-secondary'>View Projects</a>
+          <a className='btn-secondary'>View More</a>
         </Link>
       )}
     </Layout>
@@ -25,6 +25,7 @@ export default function HomePage({ projects }) {
 export async function getStaticProps() {
   const res = await fetch(`${API_URL}/projects?_sort=date:ASC&_limit=3`)
   const projects = await res.json()
+  console.log(projects)
 
   return {
     props: { projects },

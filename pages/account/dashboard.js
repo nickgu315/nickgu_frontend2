@@ -7,7 +7,7 @@ import styles from '@/styles/Dashboard.module.css'
 
 export default function DashboardPage({ projects, token }) {
   const router = useRouter()
-
+  console.log({ token })
   const deleteProject = async (id) => {
     if (confirm('Are you sure?')) {
       const res = await fetch(`${API_URL}/projects/${id}`, {
@@ -44,6 +44,9 @@ export default function DashboardPage({ projects, token }) {
 export async function getServerSideProps({ req }) {
   const { token } = parseCookies(req)
 
+  console.log("test")
+  console.log({ token })
+
   const res = await fetch(`${API_URL}/projects/me`, {
     method: 'GET',
     headers: {
@@ -52,6 +55,7 @@ export async function getServerSideProps({ req }) {
   })
 
   const projects = await res.json()
+  console.log({projects})
 
   return {
     props: {

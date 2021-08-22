@@ -27,19 +27,19 @@ export default function Header() {
 
             <div>
               <Link href='/learnmore'>
-                <a>Learn more about what I am doing</a>
+                <a>Learn more about Nick Gu</a>
               </Link>
             </div>
 
             <div>
               <Link href='/projects'>
-                <a>My Projects</a>
+                <a>Projects</a>
               </Link>
             </div>
 
             <div>
               <Link href='/projects'>
-                <a>News</a>
+                <a>Blog</a>
               </Link>
             </div>
 

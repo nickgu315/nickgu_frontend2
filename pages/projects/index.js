@@ -6,7 +6,7 @@ import { API_URL, PER_PAGE } from '@/config/index'
 export default function ProjectsPage({ projects, page, total }) {
   return (
     <Layout>
-      <h1>Projects showcase</h1>
+      <h2>Work showcase</h2>
       {projects.length === 0 && <h3>Coming Soon...</h3>}
 
       {projects.map((evt) => (

@@ -29,6 +29,6 @@ export default function Layout({ title, keywords, description, children }) {
 
 Layout.defaultProps = {
   title: 'NickGu | Passionate about building things!',
-  description: 'Check out my pass projects!',
+  description: 'Check out my projects!',
   keywords: 'architecture, art, digital art, NFT art, UI/UX',
 }

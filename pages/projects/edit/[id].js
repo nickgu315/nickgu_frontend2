@@ -93,7 +93,7 @@ export default function EditProjectPage({ evt, token }) {
             />
           </div>
           <div>
-            <label htmlFor='performers'>Performers</label>
+            <label htmlFor='performers'>People</label>
             <input
               type='text'
               name='performers'
