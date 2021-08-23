@@ -33,7 +33,7 @@ export default function Header() {
 
             <div>
               <Link href='/projects'>
-                <a>Projects</a>
+                <a>Work</a>
               </Link>
             </div>
 
@@ -52,7 +52,7 @@ export default function Header() {
 
             <div>
               <Link href='/about'>
-                <a>About</a>
+                <a>About this site</a>
               </Link>
             </div>
 
