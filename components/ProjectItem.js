@@ -8,8 +8,8 @@ export default function ProjectItem({ evt }) {
 
       <div className={styles.link}>
         <Link href={`/projects/${evt.slug}`}>
-            <a>
-            <Image className={styles.img}
+            <a className={styles.img}>
+            <Image
               src={
                 evt.thumbimage
                   ? evt.thumbimage.formats.small.url
@@ -23,8 +23,9 @@ export default function ProjectItem({ evt }) {
       </div>
 
       <div className={styles.info}>
-
-        <h3 className={styles.projectitemhead}>{evt.name}</h3>
+        <Link href={`/projects/${evt.slug}`}>
+            <a className={styles.projectitemhead}><strong>{evt.name}</strong></a>
+        </Link>
         <h4>{evt.shortd}</h4>
       </div>
 

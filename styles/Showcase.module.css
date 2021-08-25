@@ -22,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .showcase * {
@@ -154,6 +154,7 @@
     padding-top: 0px;
     padding-bottom: 0px;
     margin-top: 0px;
+    font-size: 15px;
   }
 
   .showcase3 {
@@ -174,6 +175,11 @@
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     font-size: AuthContext;
     padding-top: 0px;
+    font-size: 15px;
+  }
+
+  .showcase4 {
+    font-size: 15px;
   }
 
   .showcasetext {

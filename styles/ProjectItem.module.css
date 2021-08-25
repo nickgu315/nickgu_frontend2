@@ -21,6 +21,10 @@
   margin-bottom: 30px;
 }
 
+.info a{
+  font-size: 20px;
+}
+
 @media (max-width: 600px) {
   .project {
     flex-direction: column;
