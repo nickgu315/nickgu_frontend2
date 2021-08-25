@@ -38,7 +38,7 @@ export default function Header() {
             </div>
 
             <div>
-              <Link href='/projects'>
+              <Link href='/blog'>
                 <a>Blog</a>
               </Link>
             </div>
