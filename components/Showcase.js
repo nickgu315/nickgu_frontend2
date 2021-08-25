@@ -23,11 +23,11 @@ export default function Showcase() {
       </div>
       <div className={styles.showcase2}>
         <h3 className={styles.showcase3}>My Education: <br />
-        Harvard Graduate School of Design, Master in Architecture (MArchI) <br />
-        The University of Hong Kong, BA(Architectural Studies)</h3>
+        Harvard Graduate School of Design, <br />Master in Architecture (MArchI) <br />-<br />
+        The University of Hong Kong, <br />BA(Architectural Studies)</h3>
         <h3 className={styles.showcase3}>
           I am deeply passionate about building products <br />
-          through design and technology and bring deep values to people. {}
+          through design and technology <br /> and bring deep values to people. {}
         </h3>
       </div>
     </div>

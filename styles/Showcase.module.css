@@ -154,7 +154,7 @@
     padding-top: 0px;
     padding-bottom: 0px;
     margin-top: 0px;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .showcase3 {
@@ -175,18 +175,18 @@
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     font-size: AuthContext;
     padding-top: 0px;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .showcase4 {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .showcasetext {
     position: relative;
     top: -145px;
     right: 0px;
-    font-size: 13px;
+    font-size: 12px;
     color: #0d47a1;
   }
 
