@@ -16,8 +16,8 @@ export default function Showcase() {
         3. Connect to like minded people with similar passion
         </h3>
         <h3 className={styles.showcase4}>
-          I co-founded Eone Timepiece Inc. in 2012 when I was still in grad school and we exited in 2020.
-          visit: <a href="http://www.eone-time.com" target="_blank" rel="noopener noreferrer">www.eone-time.com</a>
+          I co-founded Eone Timepiece Inc. in 2012 <br /> when I was still in grad school and we exited in 2020.
+          <a href="http://www.eone-time.com" target="_blank" rel="noopener noreferrer">www.eone-time.com</a>
 
         </h3>
       </div>
