@@ -16,43 +16,69 @@ export default function ProjectPage({ evt }) {
     <Layout>
       <div className={styles.project}>
 
-        <h1>{evt.name}</h1>
+        <h3>{evt.name}</h3>
 
-        <h3>Nature:</h3>
-        <p>{evt.nproject}</p>
-        <h3>Role:</h3>
-        <p>{evt.role}</p>
+
+        {evt.nproject && (
+          <div className={styles.projectparam}>
+            <h4 className={styles.projectparamtext}>Work Nature:</h4>
+            <p>{evt.nproject}</p>
+          </div>
+        )}
+
+        {evt.role && (
+          <div className={styles.projectparam}>
+            <h4 className={styles.projectparamtext}>Role:</h4>
+            <p>{evt.role}</p>
+          </div>
+        )}
 
         {evt.team && (
-          <div>
-            <h4>Team:</h4>
+          <div className={styles.projectparam}>
+            <h4 className={styles.projectparamtext}>Team:</h4>
             <p>{evt.team}</p>
           </div>
         )}
 
-        <h4>Location:</h4>
-        <p>{evt.location}</p>
+        {evt.location && (
+          <div className={styles.projectparam}>
+            <h4 className={styles.projectparamtext}>Location:</h4>
+            <p>{evt.location}</p>
+          </div>
+        )}
 
         {evt.time && (
-          <div>
-            <h4>Year:</h4>
+          <div className={styles.projectparam}>
+            <h4 className={styles.projectparamtext}>Year:</h4>
             <p>{evt.time}</p>
           </div>
         )}
 
-        <h4>Description:</h4>
-        <p>{evt.description}</p>
+        {evt.description && (
+          <div>
+            <h4>Description:</h4>
+            <p>{evt.description}</p>
+          </div>
+        )}
 
         <ToastContainer />
         {evt.image && (
           <div className={styles.image}>
+          {evt.image.map((theimage) => (
             <Image
-              src={evt.image.formats.medium.url}
+              key={theimage.id}
+              src={
+                theimage
+                  ? theimage.formats.large.url
+                  : '/images/project-default.png'
+              }
               width={960}
-              height={600}
+              height={960}
             />
+          ))}
           </div>
         )}
+
 
         <ProjectMap evt={evt} />
 

@@ -44,13 +44,6 @@ export default function Header() {
             </div>
 
             <div>
-              <Link href='/projects'>
-                <a>Collaboration</a>
-              </Link>
-            </div>
-
-
-            <div>
               <Link href='/about'>
                 <a>About this site</a>
               </Link>
@@ -60,8 +53,8 @@ export default function Header() {
               // If logged in (/projects/add)
               <>
                 <div>
-                  <Link href='/account/dashboard'>
-                    <a>Create Project</a>
+                  <Link href='/account/createwithnick'>
+                    <a>Create with Nick</a>
                   </Link>
                 </div>
                 <div>

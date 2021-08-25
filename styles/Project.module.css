@@ -1,6 +1,25 @@
 .project {
   position: relative;
-  padding-top: 40px;
+  top: -35px
+}
+
+.projecthead {
+  width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.projectparam {
+  width: 500px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.projectparamtext {
+  padding-right: 10px;
 }
 
 .project h3 {
@@ -12,7 +31,8 @@
 }
 
 .image {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .controls {

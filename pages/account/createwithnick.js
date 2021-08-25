@@ -1,11 +1,11 @@
 import { parseCookies } from '@/helpers/index'
 import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
-import DashboardProject from '@/components/DashboardProject'
+import Createwithnick from '@/components/Createwithnick'
 import { API_URL } from '@/config/index'
-import styles from '@/styles/Dashboard.module.css'
+import styles from '@/styles/Createwithnick.module.css'
 
-export default function DashboardPage({ projects, token }) {
+export default function CreatewithnickPage({ projects, token }) {
   const router = useRouter()
   console.log({ token })
   const deleteProject = async (id) => {
@@ -28,13 +28,13 @@ export default function DashboardPage({ projects, token }) {
   }
 
   return (
-    <Layout title='User Dashboard'>
+    <Layout title='Create with Nick'>
       <div className={styles.dash}>
-        <h1>Dashboard</h1>
-        <h3>Coming soon</h3>
+        <h1>Create with Nick</h1>
+        <h3>Coming Soon</h3>
 
         {projects.map((evt) => (
-          <DashboardProject key={evt.id} evt={evt} handleDelete={deleteProject} />
+          <Createwithnick key={evt.id} evt={evt} handleDelete={deleteProject} />
         ))}
       </div>
     </Layout>

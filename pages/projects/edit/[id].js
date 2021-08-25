@@ -24,7 +24,7 @@ export default function EditProjectPage({ evt, token }) {
     description: evt.description,
   })
   const [imagePreview, setImagePreview] = useState(
-    evt.image ? evt.image.formats.thumbnail.url : null
+    evt.thumbimage ? evt.thumbimage.formats.thumbnail.url : null
   )
   const [showModal, setShowModal] = useState(false)
 
@@ -71,7 +71,7 @@ export default function EditProjectPage({ evt, token }) {
   const imageUploaded = async (e) => {
     const res = await fetch(`${API_URL}/projects/${evt.id}`)
     const data = await res.json()
-    setImagePreview(data.image.formats.thumbnail.url)
+    setImagePreview(data.thumbimage.formats.thumbnail.url)
     setShowModal(false)
   }
 
@@ -172,7 +172,7 @@ export default function EditProjectPage({ evt, token }) {
           onClick={() => setShowModal(true)}
           className='btn-secondary btn-icon'
         >
-          <FaImage /> Set Image
+           Set Image
         </button>
       </div>
 
