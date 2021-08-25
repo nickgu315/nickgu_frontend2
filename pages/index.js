@@ -6,7 +6,7 @@ import { API_URL } from '@/config/index'
 export default function HomePage({ projects }) {
   return (
     <Layout>
-      <h2>My Work</h2>
+      <h3>My Work</h3>
       {projects.length === 0 && <h3>Projects showcase coming soon!</h3>}
 
       {projects.map((evt) => (
