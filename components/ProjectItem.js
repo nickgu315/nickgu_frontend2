@@ -26,7 +26,7 @@ export default function ProjectItem({ evt }) {
 
       <div className={styles.link}>
         <Link href={`/projects/${evt.slug}`}>
-          <a className='btn'>Details</a>
+          <a className={styles.btn}>Details</a>
         </Link>
       </div>
     </div>

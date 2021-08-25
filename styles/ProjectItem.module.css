@@ -27,3 +27,14 @@
     margin-bottom: 20px;
   }
 }
+
+.btn {
+  display: inline-block;
+  background: #0d47a1;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 10px;
+}
