@@ -27,7 +27,7 @@ export default function Showcase() {
         The University of Hong Kong, <br />BA(Architectural Studies)</h3>
         <h3 className={styles.showcase3}>
           I am deeply passionate about building products <br />
-          through design and technology <br /> and bring deep values to people. {}
+          through design and technology <br /> and bring true values to people. {}
         </h3>
       </div>
     </div>
