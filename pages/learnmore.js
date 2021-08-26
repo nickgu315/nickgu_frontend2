@@ -7,6 +7,7 @@ export default function LearnMore() {
       <p>3D Design: Rhino, Autocad, Revit, Solidworks</p>
       <p>Visualization: Vray, 3dMax, Keyshot</p>
       <p>Coding: React, Node, Python, Flask</p>
+      <p>UI/UX: Figma, Sketch</p>
 
       <h2>Why did you learn coding/programming as a designer?</h2>
       <p>Besides design, I have always been interested and passionate about coding/ programing. I was first exposed to coding when I  had my exchange semester at the Academy of Fine Arts in Vienna.</p>
