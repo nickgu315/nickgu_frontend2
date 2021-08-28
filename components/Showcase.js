@@ -5,7 +5,7 @@ export default function Showcase() {
     <div>
       <div className={styles.showcase}>
         <h1></h1>
-        <h2 className={styles.showcasetext}>Hi! I'm Nick Gu.<br/> Designer who Codes, with Architectural, Industrial & UI/UX Design background.</h2>
+        <h2 className={styles.showcasetext}>Hi! I&apos;m Nick Gu.<br/> Designer who Codes, with Architectural, Industrial & UI/UX Design background.</h2>
       </div>
 
       <div className={styles.showcase2}>
