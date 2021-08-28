@@ -5,12 +5,12 @@ export default function Showcase() {
     <div>
       <div className={styles.showcase}>
         <h1></h1>
-        <h2 className={styles.showcasetext}>Hi! I'm Nick Gu. <br/> Designer who Codes, with Architectural, Industrial & UI/UX Design background.</h2>
+        <h2 className={styles.showcasetext}>Hi! I'm Nick Gu.<br/> Designer who Codes, with Architectural, Industrial & UI/UX Design background.</h2>
       </div>
 
       <div className={styles.showcase2}>
         <h3 className={styles.showcase3}>
-        This site is developed to: <br />
+        This site is developed to:<br />
         1. Display my pass work as a portfolio site <br />
         2. Strengthen my coding skills as a Fullstack Developer <br />
         3. Connect to like minded people with similar passion
