@@ -100,13 +100,14 @@
   text-align: right;
   top: 60px;
   right: 350px;
-  font-size: 30px;
+  font-size: 25px;
   color: #0d47a1;
 }
 
 .texth3 {
   padding: 10px;
 }
+
 
 @media (max-width: 1400px) {
   .showcasetext {

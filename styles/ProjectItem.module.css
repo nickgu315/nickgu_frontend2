@@ -1,19 +1,52 @@
 .project {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   margin: 20px 0;
   padding: 13px;
+  width: 100%;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .projectitemhead {
+  font-size: 23px;
   padding: 30px;
 }
+
+.showcase1 {
+  width: 640;
+  height: 420px;
+  background: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.showcase2 {
+  height: 300px;
+  width: 100%;
+  color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 
 .img {
   flex: 1;
   margin: 0px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .info {
@@ -25,7 +58,52 @@
   font-size: 20px;
 }
 
+.mywork {
+  top: 20px;
+  right: 80px;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.mywork p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.viewmore {
+  padding: 10px;
+  position: relative;
+  top: 80px;
+  left: 80px;
+}
+
 @media (max-width: 600px) {
+  .showcase1 {
+    width: 100%;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .showcase2 {
+    width: 100%;
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
   .project {
     flex-direction: column;
     text-align: center;
@@ -48,5 +126,12 @@
 
   .info a{
     font-size: 15px;
+  }
+
+  .viewmore {
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    left: 0px;
   }
 }

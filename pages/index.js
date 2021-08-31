@@ -2,22 +2,27 @@ import Link from 'next/link'
 import Layout from '@/components/Layout'
 import ProjectItem from '@/components/ProjectItem'
 import { API_URL } from '@/config/index'
+import styles from '@/styles/ProjectItem.module.css'
 
 export default function HomePage({ projects }) {
   return (
     <Layout>
-      <h3>My Work</h3>
+      <div className={styles.mywork}>
+        <p>My Work</p>
+      </div>
       {projects.length === 0 && <h3>Projects showcase coming soon!</h3>}
 
-      {projects.map((evt) => (
-        <ProjectItem key={evt.id} evt={evt} />
-      ))}
+        {projects.map((evt) => (
+          <ProjectItem key={evt.id} evt={evt} />
+        ))}
 
-      {projects.length > 0 && (
-        <Link href='/projects'>
-          <a className='btn-secondary'>View More</a>
-        </Link>
-      )}
+        <div className={styles.viewmore}>
+          {projects.length > 0 && (
+            <Link href='/projects'>
+              <a className='btn-secondary'>View More</a>
+            </Link>
+          )}
+        </div>
     </Layout>
   )
 }
