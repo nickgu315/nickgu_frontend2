@@ -25,6 +25,10 @@
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 
