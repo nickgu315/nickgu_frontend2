@@ -4,8 +4,8 @@ export default function Showcase() {
   return (
     <div>
       <div className={styles.showcase}>
-        <h1></h1>
         <h2 className={styles.showcasetext}>Hi! I&apos;m Nick Gu.<br/> Designer who Codes, with Architectural, Industrial & UI/UX Design background.</h2>
+        <img className={styles.showcase1} src='/images/nickgu_image.png' alt='/images/nickgu_image.png' />
       </div>
 
       <div className={styles.showcase2}>

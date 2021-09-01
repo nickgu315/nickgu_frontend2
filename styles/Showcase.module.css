@@ -1,13 +1,10 @@
 .showcase {
   height: 400px;
   width: 100%-10px;
-  background: url('/images/nickgu_image.png') no-repeat;
-  background-size: 300px;
-  background-position: 70% 100%;
   color: white;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -22,10 +19,22 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.05);
+  background: url('/images/dark_ocean.png');
+  background-position: center;
 }
 
 .showcase * {
+  z-index: 10;
+}
+
+.showcase1 {
+  position: absolute;
+  height: 350px;
+  width: auto;
+  bottom: 0px;
+  right: 150px;
+}
+.showcase1 * {
   z-index: 20;
 }
 
@@ -99,9 +108,9 @@
   position: relative;
   text-align: right;
   top: 60px;
-  right: 350px;
+  right: 250px;
   font-size: 25px;
-  color: #0d47a1;
+  color: white;
 }
 
 .texth3 {
@@ -115,7 +124,12 @@
     top: 120px;
     right: 250px;
     font-size: 15px;
-    color: #0d47a1;
+    color: white;
+  }
+  .showcase1 {
+    height: 350px;
+    width: auto;
+    right: 150px;
   }
   }
 
@@ -124,21 +138,34 @@
   .showcase {
     height: 400px;
     width: 100%-10px;
-    background: url('/images/nickgu_image.png') no-repeat;
-    background-size: 250px;
-    background-position: center bottom;
     color: white;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
     margin: 20px;
-    margin-bottom: 10px;
   }
 
+  .showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/dark_ocean.png');
+    background-position: center;
+  }
+
+  .showcase1 {
+    height: 300px;
+    width: auto;
+    bottom: 0px;
+    right: 10px;
+  }
   .showcase2 {
     height: 500px;
     width: 100%;
@@ -192,7 +219,7 @@
     top: -155px;
     right: 0px;
     font-size: 12px;
-    color: #0d47a1;
+    color: white;
   }
 
 }
