@@ -8,6 +8,7 @@ import ProjectMap from '@/components/ProjectMap'
 import { API_URL } from '@/config/index'
 import styles from '@/styles/Project.module.css'
 import { useRouter } from 'next/router'
+import ReactPlayer from 'react-player';
 
 export default function ProjectPage({ evt }) {
   const router = useRouter()
@@ -56,8 +57,20 @@ export default function ProjectPage({ evt }) {
 
         {evt.description && (
           <div>
-            <h4>Description:</h4>
-            <p>{evt.description}</p>
+            <h4 className={styles.description}>Description:</h4>
+            <p className={styles.description2}>{evt.description}</p>
+          </div>
+        )}
+
+        {evt.video_t1 && (
+          <div className={styles.yt_cntainer2}>
+            <ReactPlayer className={styles.react_player} url={evt.video_t1}
+            playing={true}
+            loop={true}
+            controls={false}
+            width="100%"
+            height="55.8%" />
+            <div className={styles.yt_mask3}></div>
           </div>
         )}
 
@@ -72,15 +85,12 @@ export default function ProjectPage({ evt }) {
                   ? theimage.formats.large.url
                   : '/images/project-default.png'
               }
-              width={960}
-              height={960}
+              width={680}
+              height={680}
             />
           ))}
           </div>
         )}
-
-
-        <ProjectMap evt={evt} />
 
         <Link href='/projects'>
           <a className={styles.back}>{'<'} Go Back</a>
