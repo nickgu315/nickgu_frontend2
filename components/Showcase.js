@@ -9,15 +9,15 @@ export default function Showcase() {
       </div>
 
       <div className={styles.showcase2}>
-        <h3 className={styles.showcase3}>
-        This site is developed to:<br />
-        1. Display my pass work as a portfolio site <br />
-        2. Strengthen my coding skills as a Fullstack Developer <br />
-        3. Connect to like minded people with similar passion
-        </h3>
+        <div className={styles.showcase3}>
+          <div>This site is developed to:</div>
+          <div className={styles.showcase3b}><p>1. Display my pass work as a portfolio site </p> <p className={styles.emo_size}>&nbsp; 🖼️</p></div>
+          <div className={styles.showcase3b}><p>2. Strengthen my coding skills as a Fullstack Developer</p> <p className={styles.emo_size}>&nbsp; 👨‍💻</p></div>
+          <div className={styles.showcase3b}><p>3. Connect to like minded people with similar passion‍</p> <p className={styles.emo_size}>&nbsp;‍ ❤️‍🔥</p></div>
+        </div>
         <h3 className={styles.showcase4}>
           I co-founded Eone Timepiece Inc. in 2012 <br /> when I was still in grad school and we exited in 2020.
-          <a href="http://www.eone-time.com" target="_blank" rel="noopener noreferrer">www.eone-time.com</a>
+          <a href="http://www.eone-time.com" target="_blank" rel="noopener noreferrer">www.eone-time.com ⏳</a>
 
         </h3>
       </div>

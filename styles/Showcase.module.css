@@ -65,13 +65,32 @@
   color: black;
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 10px;
   margin: 10px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.showcase3b {
+  height: 45px;
+  width: 100%;
+  background: white;
+  color: black;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.emo_size {
+  font-size: 25px
 }
 
 .showcase4 {
@@ -212,6 +231,11 @@
     font-size: 12px;
   }
 
+  .showcase3b {
+    font-size: 10px;
+    height: 30px;
+    font-weight: bold;
+  }
   .showcasetext {
     width: 80%;
     position: relative;
@@ -220,6 +244,10 @@
     right: 0px;
     font-size: 12px;
     color: white;
+  }
+
+  .emo_size {
+    font-size: 15px
   }
 
 }
