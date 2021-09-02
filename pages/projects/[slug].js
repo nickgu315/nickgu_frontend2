@@ -76,19 +76,21 @@ export default function ProjectPage({ evt }) {
 
         <ToastContainer />
         {evt.image && (
-          <div className={styles.image}>
-          {evt.image.map((theimage) => (
-            <Image
-              key={theimage.id}
-              src={
-                theimage
-                  ? theimage.formats.large.url
-                  : '/images/project-default.png'
-              }
-              width={680}
-              height={680}
-            />
-          ))}
+          <div className={styles.allimage}>
+            {evt.image.map((theimage) => (
+              <div className={styles.image1} key={theimage.id}>
+                <Image
+                  key={theimage.id}
+                  src={
+                    theimage
+                      ? theimage.formats.large.url
+                      : '/images/dark_ocean.png'
+                  }
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
+            ))}
           </div>
         )}
 
