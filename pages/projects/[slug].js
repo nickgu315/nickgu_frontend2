@@ -13,6 +13,7 @@ import ReactPlayer from 'react-player';
 export default function ProjectPage({ evt }) {
   const router = useRouter()
 
+
   return (
     <Layout>
       <div className={styles.project}>

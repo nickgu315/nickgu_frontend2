@@ -8,4 +8,4 @@ export const NEXT_URL =
   // process.env.NEXT_PUBLIC_VERCEL_URL // || 'http://localhost:3000' // for dev
   process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000' // for dev
 
-export const PER_PAGE = 5
+export const PER_PAGE = 10

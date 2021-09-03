@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/ProjectItem.module.css'
 
 export default function ProjectItem({ evt }) {
+
   return (
     <div className={styles.showcase1}>
         <div className={styles.showcase2}>
