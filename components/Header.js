@@ -9,7 +9,7 @@ export default function Header() {
   const { user, logout } = useContext(AuthContext)
 
   return (
-    <header>
+    <header className={styles.header0}>
       <nav className={styles.header}>
           <div className={styles.topbarleftlogo}>
             <Link href='/'>
