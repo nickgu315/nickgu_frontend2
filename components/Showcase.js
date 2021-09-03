@@ -11,7 +11,7 @@ export default function Showcase() {
       <div className={styles.showcase2}>
         <div className={styles.showcase3}>
           <div className={styles.showcase3a}>This site is developed to:</div>
-          <div className={styles.showcase3b}><p>1. Display my pass work as a portfolio site </p> <p className={styles.emo_size0}>&nbsp; 🖼️</p></div>
+          <div className={styles.showcase3b}><p>1. Display my past work as a portfolio site </p> <p className={styles.emo_size0}>&nbsp; 🖼️</p></div>
           <div className={styles.showcase3b}><p>2. Strengthen my coding skills as a Fullstack Developer</p> <p className={styles.emo_size0}>&nbsp; 👨‍💻</p></div>
           <div className={styles.showcase3b}><p>3. Connect to like minded people with similar passion‍</p> <p className={styles.emo_size0}>&nbsp;‍ ❤️‍🔥</p></div>
         </div>
